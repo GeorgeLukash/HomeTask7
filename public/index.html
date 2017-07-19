@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+    <link rel="icon" href="css/img/js.png" />
+</head>
+<body>
+
+    <div id="nickWrap">
+        <p>Enter a username</p>   
+        <div id="nickError"></div>    
+        <form id="setNick">
+            <input id="nickname" placeholder="Enter you nickname..."/>
+            <input id="button" type="submit" value="Send"/>
+        </form>      
+    </div>
+
+
+    <div id="contentWrap">
+
+        <div id="chatWrap">
+            <ul id="chat"></ul>
+            <form id="send-messages">
+                <input placeholder="Type your message...." id="message" />
+                <input type="submit" value="Send" id="send-btn" />
+            </form>
+        </div>
+        <ul id="users"></ul>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
